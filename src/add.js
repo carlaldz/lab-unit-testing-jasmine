@@ -2,6 +2,9 @@ function add (numOne, numTwo) {
     if (numOne == undefined || numTwo == undefined) {
         return undefined;
     }
+    else if (typeof numOne !== "number" || typeof numTwo !== "number"){
+        return undefined;
+    }
 
     return numOne + numTwo;
 }
@@ -16,4 +19,5 @@ in the different tests to keep them organiced.
 The test desscriptions start with "It" and is followed with a phrase of what the code should do to p
 pass this test, like "should return, should be, should take"
 4. What do the expect functions do, and what input do they take?
-The expect functions do literally pose examples of what
+The expect functions do literally pose examples of what the function should do, take the output of the code being tested
+as the input and compares with the expected value. */
